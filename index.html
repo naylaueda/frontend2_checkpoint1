@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/star_war_favicon.png" type="image/x-icon">
+    <title>Star Wars Card</title>
+</head>
+
+<body>
+    <main>
+        <h1>Star Wars Card</h1>
+        <h2>Faça o card do seu personagem favorito. <br>Preencha todos os campos abaixo para criar!</h2>
+        <form align="center" action="/listar">
+            <div class="alinharForm">
+                <p>Personagem: <input class="campo" type="text" placeholder="ex: Luke Skywalker" id="inPersonagem"></p>
+                <p>Espécie:<input class="campo" type="text" placeholder="ex: Humano" id="inEspecie"></p>
+                <p>Planeta natal: <input class="campo" type="text" placeholder="ex: Tatooine" id="inPlaneta"></p>
+                <p>Imagem: <input class="campo" type="text" placeholder="URL da imagem" id="inImagem"></p>
+            </div>
+            <div class="alinhar">
+                <label for="filme">Imagem do filme:</label>
+                <br />
+                <input class="filme" type="radio" name="filme" value="Episódio I - A Ameaça Fantasma" checked> Episódio
+                I - A Ameaça Fantasma</input>
+                <br />
+                <input class="filme" type="radio" name="filme" value="Episódio II - Ataque dos Clones"> Episódio II -
+                Ataque dos Clones</input>
+                <br />
+                <input class="filme" type="radio" name="filme" value="Episódio III - A Vingança dos Sith"> Episódio III
+                - A Vingança dos Sith</input>
+                <br />
+                <input class="filme" type="radio" name="filme" value="Episódio IV - Uma Nova Esperança"> Episódio IV -
+                Uma Nova Esperança</input>
+                <br />
+                <input class="filme" type="radio" name="filme" value="Episódio V - O Império Contra-Ataca">  Episódio V -
+                O Império Contra-Ataca</input>
+                <br />
+                <input class="filme" type="radio" name="filme" value="Episódio VI - O Retorno de Jedi"> Episódio VI - O
+                Retorno de Jedi</input>
+                <br />
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="assistiu" id="assistiu" checked> Já assisti o filme selecionado</input>
+            </div>
+            <div>
+                <input class="button" type="button" value="Criar Card" id="btnCard">
+                <input class="button" type="reset" value="Limpar" id="btnLimpar">
+                <input class="button" type="button" value="Reset" id="btnReset">
+            </div>
+        </form>
+        <h2>CARDS CRIADOS</h2>
+        <div align="center" id="card"></div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

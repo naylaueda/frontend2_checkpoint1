@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --amarelo: #F7E51F
+  }
+
+body {
+    background-image: url(https://pbs.twimg.com/media/EVvJpmgU8AAEq2q.jpg:large)
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 70px;
+    padding: 20px;
+    color: var(--amarelo);
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding-top: 10px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 20px;
+    color: var(--amarelo);
+}
+
+form {
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+img {
+    height: 250px;
+    padding: 30px 0 10px 0;
+
+}
+
+.button {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--amarelo);
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.campo {
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.274);
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border: 0;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: rgba(231, 198, 10, 0.561);
+}
+
+.alinhar {
+    text-align: left;
+    padding: 30px;
+}
+
+.alinharForm{
+    text-align: right;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    cursor: pointer;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: var(--amarelo);
+    content: '';
+    display: inline-block;
+}
+
+input[type='checkbox']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    cursor: pointer;
+}
+
+input[type='checkbox']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: var(--amarelo);
+    content: '';
+    display: inline-block;
+}
+
+.checkbox {
+    padding-bottom: 30px;
+}
